@@ -1,0 +1,76 @@
+---
+data_hanlder:
+  worldometer:
+    columns_rename:
+      "Country/Region": "country"
+      "NewCases": "new_cases"
+      "TotalDeaths": "deaths"
+      "NewDeaths": "new_deaths"
+      "TotalRecovered": "recovered"
+      "NewRecovered": "new_recovered"
+      "ActiveCases": "active"
+    columns_text:
+      "country": "string"
+    columns_integer:
+      "new_cases": "Int64"
+      "deaths": "Int64"
+      "new_deaths": "Int64"
+      "recovered": "Int64"
+      "new_recovered": "Int64"
+      "active": "Int64"
+    columns_sorted:
+      - "country"
+      - "deaths"
+      - "recovered"
+      - "active"
+      - "new_cases"
+      - "new_deaths"
+      - "new_recovered"
+  country_wise:
+    columns_rename:
+      "Country/Region": "country"
+      "Deaths": "deaths"
+      "Recovered": "recovered"
+      "Active": "active"
+      "New cases": "new_cases"
+      "New deaths": "new_deaths"
+      "New recovered": "new_recovered"
+    columns_text:
+      "country": "string"
+    columns_integer:
+      "deaths": "Int64"
+      "recovered": "Int64"
+      "active": "Int64"
+      "new_cases": "Int64"
+      "new_deaths": "Int64"
+      "new_recovered": "Int64"
+  full_grouped:
+    columns_rename:
+      "Date": "date"
+      "Country/Region": "country"
+      "Confirmed": "confirmed"
+      "Deaths": "deaths"
+      "Recovered": "recovered"
+      "Active": "active"
+    columns_text:
+      "country": "string"
+    columns_integer:
+      "confirmed": "Int64"
+      "deaths": "Int64"
+      "recovered": "Int64"
+      "active": "Int64"
+  clean_complete:
+    columns_rename:
+      "Country/Region": "country"
+      "Date": "date"
+      "Confirmed": "confirmed"
+      "Deaths": "deaths"
+      "Recovered": "recovered"
+      "Active": "active"
+    columns_text:
+      "country": "string"
+    columns_integer:
+      "confirmed": "Int64"
+      "deaths": "Int64"
+      "recovered": "Int64"
+      "active": "Int64"
